@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ru</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Sqvope</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.5</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>12</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>a7eeeffa06f43f5fd38326c1558da0f6ff7b1483</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>S 1@2x.png</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Расчет площади</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Площадь</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Edestima.Square</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>TabIndex</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>P 1@2x.png</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Расчет периметра</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Периметр</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Edestima.Square</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>TabIndex</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>V 1@2x.png</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Расчет объема</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Объем</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Edestima.Square</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>TabIndex</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>
