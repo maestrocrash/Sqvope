@@ -81,7 +81,6 @@
 		A3D2BD781A7E54B700ADF628 /* CalculationPerimetr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2BD771A7E54B700ADF628 /* CalculationPerimetr.swift */; };
 		A3D41EBD1DF8399F0004488F /* Volume_pyramid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D41EBB1DF8399F0004488F /* Volume_pyramid.storyboard */; };
 		A3D41EBF1DF84EE00004488F /* Square_chetyrex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D41EBE1DF84EE00004488F /* Square_chetyrex.storyboard */; };
-		A3D809EC1BDFB4E50044C282 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D809EB1BDFB4E50044C282 /* CoreSpotlight.framework */; };
 		A3D92A601A7000D2009E2B9B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D92A5F1A7000D2009E2B9B /* TabBarController.swift */; };
 		A3D92A631A702881009E2B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D92A611A702881009E2B9B /* Main.storyboard */; };
 		A3DEF01A1AB48442000D8B3D /* s7.1.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DEF0181AB48442000D8B3D /* s7.1.png */; };
@@ -219,8 +218,6 @@
 		A3D2BD771A7E54B700ADF628 /* CalculationPerimetr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationPerimetr.swift; sourceTree = "<group>"; };
 		A3D41EBC1DF8399F0004488F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Volume_pyramid.storyboard; sourceTree = "<group>"; };
 		A3D41EBE1DF84EE00004488F /* Square_chetyrex.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Square_chetyrex.storyboard; sourceTree = "<group>"; };
-		A3D809EB1BDFB4E50044C282 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
-		A3D809ED1BDFB4EF0044C282 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A3D92A5F1A7000D2009E2B9B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A3D92A621A702881009E2B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3DEF0181AB48442000D8B3D /* s7.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s7.1.png; sourceTree = "<group>"; };
@@ -276,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04833482519353D002D814E /* CoreServices.framework in Frameworks */,
-				A3D809EC1BDFB4E50044C282 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +312,6 @@
 		A3255B5E1A6BD25900C5974B = {
 			isa = PBXGroup;
 			children = (
-				A3D809ED1BDFB4EF0044C282 /* MobileCoreServices.framework */,
-				A3D809EB1BDFB4E50044C282 /* CoreSpotlight.framework */,
 				A3255B691A6BD25900C5974B /* Square */,
 				A3255B681A6BD25900C5974B /* Products */,
 				A34E66351AB5E21600726745 /* Volume */,
