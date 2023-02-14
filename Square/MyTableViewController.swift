@@ -39,19 +39,6 @@ class MyTableViewController: tableList {
         let listOfFigures = ["Расчет площади круга","Расчет площади квадрата", "Расчет площади треугольника", "Расчет площади ромба", "Расчет площади параллелограмма", "Расчет площади прямоугольника", "Расчет площади трапеции", "Расчет площади четырехугольника", "Расчет площади шестиугольника", "Расчет площади эллипса", "Расчет площади кольца", "Расчет площади сектора круга", "Расчет площади сегмента круга"]
         array = arrayApend(list: listOfFigures)
 
-//        MyArray.append(Square(id: "1", name: "Расчет площади круга", title: "Круг"))
-//        MyArray.append(Square(id: "2", name: "Расчет площади квадрата", title: "Квадрат"))
-//        MyArray.append(Square(id: "3", name: "Расчет площади треугольника", title: "Треугольник"))
-//        MyArray.append(Square(id: "4", name: "Расчет площади ромба", title: "Ромб"))
-//        MyArray.append(Square(id: "5", name: "Расчет площади параллелограмма", title: "Параллелограмм"))
-//        MyArray.append(Square(id: "6", name: "Расчет площади прямоугольника", title: "Прямоугольник"))
-//        MyArray.append(Square(id: "7", name: "Расчет площади трапеции", title: "Трапеция"))
-//        MyArray.append(Square(id: "8", name: "Расчет площади четырехугольника", title: "Четырехугольник"))
-//        MyArray.append(Square(id: "9", name: "Расчет площади шестиугольника", title: "Шестиугольник"))
-//        MyArray.append(Square(id: "10", name: "Расчет площади эллипса", title: "Эллипс"))
-//        MyArray.append(Square(id: "11", name: "Расчет площади кольца", title: "Кольцо"))
-//        MyArray.append(Square(id: "12", name: "Расчет площади сектора круга", title: "Сектор круга"))
-//        MyArray.append(Square(id: "13", name: "Расчет площади сегмента круга", title: "Сегмент круга"))
 
         initSearchableItems(array: array)
         designTableView(color: .squape)
@@ -93,16 +80,6 @@ class MyTableViewController: tableList {
 
     // MARK: - Navigation
 
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let songId1: Int
-//        if let index = (tableView.indexPathForSelectedRow as NSIndexPath?)?.row {
-//            songId1 = index
-//        } else {
-//            songId1 = searchedSongIdentifier!
-//        }
-//      
-//    }
     
     override func restoreUserActivityState(_ activity: NSUserActivity) {
         if activity.activityType == CSSearchableItemActionType {

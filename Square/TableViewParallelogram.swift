@@ -10,7 +10,6 @@ import UIKit
 
 class TableViewParallelogram: tableList {
     
-   // var ArrayParallelogram: [Square] = []
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -34,15 +33,7 @@ class TableViewParallelogram: tableList {
         let arrayTest = ["По высоте и стороне", "По сторонам", "По диагоналям и углу"]
         
         array = arrayApend(list: arrayTest)
-        
-//        let idArray = ArrayParallelogram.count + 1
-//
-//
-//
-//        ArrayParallelogram.append(Square(id: "\(idArray)", name: "По высоте и стороне", title: "Высота и сторона"))
-//        ArrayParallelogram.append(Square(id: "\(idArray)", name: "По сторонам", title: "Сторона"))
-//        ArrayParallelogram.append(Square(id: "\(idArray)", name: "По диагоналям и углу", title: "Диагональ"))
-        
+                
         designTableView(color: .squape)
 }
 

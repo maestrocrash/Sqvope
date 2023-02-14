@@ -127,7 +127,8 @@
 		A3F7DAEB1A84806A000D9634 /* TableTriangleRavnobedrenyi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7DAEA1A84806A000D9634 /* TableTriangleRavnobedrenyi.swift */; };
 		A3F7DAED1A848488000D9634 /* TableTriangleRavnostoron.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7DAEC1A848488000D9634 /* TableTriangleRavnostoron.swift */; };
 		A3FFAB551BBBBBBD00F39136 /* VolumeConusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FFAB541BBBBBBD00F39136 /* VolumeConusTableViewController.swift */; };
-		F04833482519353D002D814E /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04833472519353D002D814E /* CoreServices.framework */; };
+		D343BE23299C1DCD000399FC /* ScreenSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D343BE22299C1DCD000399FC /* ScreenSquare.swift */; };
+		D343BE25299C2DBB000399FC /* SceneDelegare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D343BE24299C2DBB000399FC /* SceneDelegare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,7 +265,8 @@
 		A3F7DAEA1A84806A000D9634 /* TableTriangleRavnobedrenyi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTriangleRavnobedrenyi.swift; sourceTree = "<group>"; };
 		A3F7DAEC1A848488000D9634 /* TableTriangleRavnostoron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTriangleRavnostoron.swift; sourceTree = "<group>"; };
 		A3FFAB541BBBBBBD00F39136 /* VolumeConusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeConusTableViewController.swift; sourceTree = "<group>"; };
-		F04833472519353D002D814E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D343BE22299C1DCD000399FC /* ScreenSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSquare.swift; sourceTree = "<group>"; };
+		D343BE24299C2DBB000399FC /* SceneDelegare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +274,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04833482519353D002D814E /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +319,6 @@
 				A3F73F601AB1D20E008C2AEA /* Square */,
 				A3F73F581AB1C283008C2AEA /* Edestima */,
 				A3A85C821AB0D29400677633 /* PerimetrPicters */,
-				F04833462519353D002D814E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -334,6 +334,7 @@
 		A3255B691A6BD25900C5974B /* Square */ = {
 			isa = PBXGroup;
 			children = (
+				D343BE21299C1D94000399FC /* Screen */,
 				A32E2A471A84A18E006F6E5D /* High Class */,
 				A32E2A4A1A84C9E9006F6E5D /* TableView */,
 				A30964B71DEF0B15007613C4 /* Storyboard_collection */,
@@ -351,6 +352,7 @@
 				A3255B731A6BD25900C5974B /* Images.xcassets */,
 				A33D1BED1A6BE28500783FF1 /* ImageTabBar */,
 				A3255B6A1A6BD25900C5974B /* Supporting Files */,
+				D343BE24299C2DBB000399FC /* SceneDelegare.swift */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -512,12 +514,12 @@
 			name = Square;
 			sourceTree = "<group>";
 		};
-		F04833462519353D002D814E /* Frameworks */ = {
+		D343BE21299C1D94000399FC /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				F04833472519353D002D814E /* CoreServices.framework */,
+				D343BE22299C1DCD000399FC /* ScreenSquare.swift */,
 			);
-			name = Frameworks;
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -713,6 +715,7 @@
 				A30907241BEBEEFE00344197 /* Perimetr.swift in Sources */,
 				A3568EB51AAC5864006EE488 /* CircleAreaTableViewController.swift in Sources */,
 				A3D92A601A7000D2009E2B9B /* TabBarController.swift in Sources */,
+				D343BE25299C2DBB000399FC /* SceneDelegare.swift in Sources */,
 				A3A560EB1A7A27CB00F56E58 /* MyTableViewController.swift in Sources */,
 				A3F7DAED1A848488000D9634 /* TableTriangleRavnostoron.swift in Sources */,
 				A3255B6F1A6BD25900C5974B /* ViewController.swift in Sources */,
@@ -728,6 +731,7 @@
 				A3E290931AB0ABD8000EF7DA /* Help1ViewController.swift in Sources */,
 				A32E3D2B1A777C64001AD806 /* AreaThreerange.swift in Sources */,
 				A301F77320CC059200562DC0 /* SweetAlert.swift in Sources */,
+				D343BE23299C1DCD000399FC /* ScreenSquare.swift in Sources */,
 				A33A40D11A7FB87600D7522D /* MyTableVolume.swift in Sources */,
 				A3A759F71AB0A7E800CCF6D6 /* HelpViewController.swift in Sources */,
 				A3E4F0621A7FBEFB00B36366 /* CalculatorVolume.swift in Sources */,
@@ -910,7 +914,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Square/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edestima.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -933,7 +937,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Square/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edestima.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

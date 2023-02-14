@@ -10,12 +10,8 @@ import UIKit
 import Foundation
 import MessageUI
 
-
-
-
 class Help1ViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
-   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.tabBarController?.tabBar.barTintColor = UIColorFromRGB(0xFF9500)

@@ -36,6 +36,7 @@ class SweetAlert: UIViewController {
     var subTitleTextView = UITextView()
     var userAction:((_ isOtherButton: Bool) -> Void)? = nil
     let kFont = "American Typewriter"
+    
     init() {
         super.init(nibName:nil, bundle:nil)
         
@@ -44,11 +45,9 @@ class SweetAlert: UIViewController {
         self.view.autoresizingMask = UIView.AutoresizingMask.flexibleWidth
         self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBakcgroundTansperancy)
         self.view.addSubview(contentView)
-        
-        
+    
         //Retaining itself strongly so can exist without strong refrence
         strongSelf = self
-        
     }
     
     func setupContentView() {
@@ -72,7 +71,6 @@ class SweetAlert: UIViewController {
     }
     
     func setupSubtitleTextView() {
-        
         subTitleTextView.text = ""
         subTitleTextView.textAlignment = .center
         subTitleTextView.font = UIFont(name: kFont, size:16)
@@ -155,17 +153,17 @@ class SweetAlert: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-//        var sz = UIScreen.main.bounds.size
-//        let sver = UIDevice.current.systemVersion as NSString
-//        let ver = sver.floatValue
+        //        var sz = UIScreen.main.bounds.size
+        //        let sver = UIDevice.current.systemVersion as NSString
+        //        let ver = sver.floatValue
         /*if ver < 10.0 {
-            // iOS versions before 7.0 did not switch the width and height on device roration
-          
-            if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
-                let ssz = sz
-                sz = CGSize(width:ssz.height, height:ssz.width)
-            }
-        }*/
+         // iOS versions before 7.0 did not switch the width and height on device roration
+         
+         if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
+         let ssz = sz
+         sz = CGSize(width:ssz.height, height:ssz.width)
+         }
+         }*/
         self.resizeAndRelayout()
     }
     
@@ -225,23 +223,23 @@ class SweetAlert: UIViewController {
     public func showAlert(title: String, subTitle: String?, style: AlertStyle,buttonTitle: String, action: ((_ isOtherButton: Bool) -> Void)? = nil) {
         self.showAlert(title:title, subTitle: subTitle, style: style, buttonTitle: buttonTitle,buttonColor: UIColor.black)
         userAction = action
-    
+        
     }
     
     public func showAlert(title: String, subTitle: String?, style: AlertStyle,buttonTitle: String,buttonColor: UIColor,action: ((_ isOtherButton: Bool) -> Void)? = nil) {
         self.showAlert(title:title, subTitle: subTitle, style: style, buttonTitle: buttonTitle,buttonColor: buttonColor,otherButtonTitle: nil)
         userAction = action
-    
+        
     }
     
     open func showAlert(title: String, subTitle: String?, style: AlertStyle,buttonTitle: String,buttonColor: UIColor,otherButtonTitle:String?, action: ((_ isOtherButton: Bool) -> Void)? = nil) {
         self.showAlert(title:title, subTitle: subTitle, style: style, buttonTitle: buttonTitle,buttonColor: buttonColor,otherButtonTitle:
-            otherButtonTitle,otherButtonColor: UIColor.red)
+                        otherButtonTitle,otherButtonColor: UIColor.red)
         userAction = action
     }
     
     open func showAlert(title: String, subTitle: String?, style: AlertStyle,buttonTitle: String,buttonColor: UIColor,otherButtonTitle:
-        String?, otherButtonColor: UIColor?,action: ((_ isOtherButton: Bool) -> Void)? = nil) {
+                        String?, otherButtonColor: UIColor?,action: ((_ isOtherButton: Bool) -> Void)? = nil) {
         userAction = action
         let window: UIWindow = UIApplication.shared.keyWindow!
         window.addSubview(view)
@@ -319,26 +317,26 @@ class SweetAlert: UIViewController {
             
             self.contentView.layer.transform = CATransform3DMakeScale(1.1, 1.1, 0.0);
             
+        }, completion: { (Bool) -> Void in
+            
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
+                
+                self.contentView.layer.transform = CATransform3DMakeScale(0.9, 0.9, 0.0);
+                
             }, completion: { (Bool) -> Void in
                 
                 UIView.animate(withDuration: 0.1, animations: { () -> Void in
                     
-                    self.contentView.layer.transform = CATransform3DMakeScale(0.9, 0.9, 0.0);
+                    self.contentView.layer.transform = CATransform3DMakeScale(1.0, 1.0, 0.0);
+                    if self.animatedView != nil {
+                        self.animatedView!.animate()
+                    }
                     
-                    }, completion: { (Bool) -> Void in
-                        
-                        UIView.animate(withDuration: 0.1, animations: { () -> Void in
-                            
-                            self.contentView.layer.transform = CATransform3DMakeScale(1.0, 1.0, 0.0);
-                            if self.animatedView != nil {
-                                self.animatedView!.animate()
-                            }
-                            
-                            }, completion: { (Bool) -> Void in
-                                
-                                self.contentView.transform = previousTransform
-                        })
+                }, completion: { (Bool) -> Void in
+                    
+                    self.contentView.transform = previousTransform
                 })
+            })
         })
     }
     

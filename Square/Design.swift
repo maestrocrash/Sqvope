@@ -20,30 +20,22 @@ extension UITableViewController{
     }
     
     func designTabBarController(color: colorTabBarController) {
-        
         tabBarController?.tabBar.barTintColor = UIColorFromRGB(color.rawValue)
         tabBarController?.tabBar.tintColor = UIColor.white
-        //tabBarController?.selectedIndex = index
-        
     }
     
-
     func designTableView(color: colorTabBarController) {
         
         //Hide empty cell
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         tableView.backgroundColor = UIColor.white
         
-        
         //Dynamic cell
-        
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = 54
         
-        
         //white color controller item
-        
         navigationController?.navigationBar.barStyle = UIBarStyle.black
         
         //color navigationController
@@ -56,13 +48,15 @@ extension UITableViewController{
         
         navigationController?.navigationBar.tintColor = UIColor.white
         
+        navigationController?.navigationBar.backgroundColor = .black
+        
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "American Typewriter", size: 22)!]
         
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: self, action: #selector(UIWebView.goBack))
         
         backButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "American Typewriter", size: 18)!], for: UIControl.State())
         
-            navigationItem.backBarButtonItem = backButton
+        navigationItem.backBarButtonItem = backButton
         
     }
     
@@ -90,7 +84,7 @@ extension UITableViewController{
         default:
             break
         }
-   
+        
     }
     
     func allFunction(color: colorTabBarController) {
@@ -103,13 +97,8 @@ extension UITableViewController{
             
         }
         
-        
     }
-    
-   
-   
 }
-
 
 
 class tableList: UITableViewController{

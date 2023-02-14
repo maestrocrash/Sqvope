@@ -319,30 +319,7 @@ extension UIViewController {
         } else {
             listFormulsThreeValue(textFieldOne: textFieldOne, textFieldTwo: textFieldTwo, textFieldThree: textFieldThree, nameTextOne: nameTextOne, nameTextTwo: nameTextTwo, nameTextThree: nameTextThree, formuls: formuls)
         }
-//
-//        guardFunction(textField: textFieldOne, nameText: nameTextOne)
-//        guardFunction(textField: textFieldTwo, nameText: nameTextTwo)
-//        guardFunction(textField: textFieldThree, nameText: nameTextThree)
-////
-//        guard textFieldOne!.text != "" else {
-//            SweetAlert().showAlert(title: "Ошибка", subTitle: "Введите значение \(nameTextOne)", style: AlertStyle.error)
-//            self.view.endEditing(true)
-//            return
-//        }
-//
-//        guard textFieldTwo!.text != "" else {
-//            SweetAlert().showAlert(title: "Ошибка", subTitle: "Введите значение \(nameTextTwo)", style: AlertStyle.error)
-//            self.view.endEditing(true)
-//            return
-//        }
-//
-//        guard textFieldThree!.text != "" else {
-//            SweetAlert().showAlert(title: "Ошибка", subTitle: "Введите значение \(nameTextTwo)", style: AlertStyle.error)
-//            self.view.endEditing(true)
-//            return
-//        }
 
-      
 
     }
     
