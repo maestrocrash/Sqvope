@@ -55,15 +55,12 @@ class ScreenSquare: UIViewController {
         return button
         
     }()
-    
-    
-    
+  
 }
 
 extension ScreenSquare {
     
     private func setupView() {
-        
         view.addSubview(imageFigure)
         view.addSubview(textFieldParametrlFigure)
         view.addSubview(buttonCalc)
@@ -91,10 +88,7 @@ extension ScreenSquare {
            
             buttonCalc.trailingAnchor.constraint(equalTo: imageFigure.trailingAnchor),
             buttonCalc.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
-
-
         ])
-        
     }
     
 }
