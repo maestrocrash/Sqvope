@@ -10,7 +10,6 @@ import UIKit
 
 
 class ScreenSquare: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
